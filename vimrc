@@ -9,6 +9,8 @@ Plug 'editorconfig/editorconfig-vim'
 
 call plug#end()
 
+let mapleader=","
+
 set clipboard=unnamed
 set number
 set relativenumber
@@ -29,6 +31,10 @@ set list
 let $FZF_DEFAULT_COMMAND = 'ag -g "" --hidden --ignore .git'
 
 imap jj <Esc>
+
+nmap <Leader>e :NERDTreeToggle<CR>
+nmap <Leader>j :NERDTreeFind<CR>
+nmap <Leader>t :Files<CR>
 
 syntax on
 colorscheme onedark
