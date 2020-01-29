@@ -6,6 +6,8 @@ Plug 'junegunn/fzf.vim'
 Plug 'preservim/nerdtree'
 Plug 'joshdick/onedark.vim'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'preservim/nerdcommenter'
+Plug 'terryma/vim-multiple-cursors'
 Plug 'elixir-editors/vim-elixir'
 
 call plug#end()
@@ -18,6 +20,7 @@ set relativenumber
 set ruler
 set backspace=indent,eol,start  
 set encoding=utf-8
+set nowrap
 
 set smartindent
 set tabstop=4
