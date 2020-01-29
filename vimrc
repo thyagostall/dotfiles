@@ -2,6 +2,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'godlygeek/tabular'
 Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'preservim/nerdtree'
 Plug 'joshdick/onedark.vim'
@@ -9,10 +10,9 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'preservim/nerdcommenter'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'elixir-editors/vim-elixir'
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
-
-let mapleader=","
 
 set clipboard=unnamed
 set number
@@ -28,6 +28,7 @@ set shiftwidth=4
 set expandtab
 
 set path+=**
+set laststatus=2
 
 set listchars=eol:¬,tab:>·,trail:~,space:␣
 set list
@@ -39,6 +40,9 @@ imap jj <Esc>
 nmap <Leader>e :NERDTreeToggle<CR>
 nmap <Leader>j :NERDTreeFind<CR>
 nmap <Leader>t :Files<CR>
+
+nmap <Leader>[ :bp<CR>
+nmap <Leader>] :bn<CR>
 
 syntax on
 colorscheme onedark
