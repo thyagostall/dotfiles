@@ -30,8 +30,7 @@ set expandtab
 set path+=**
 set laststatus=2
 
-set listchars=eol:¬,tab:>·,trail:~,space:␣
-set list
+set listchars=eol:¬,tab:>-,trail:~,space:·
 
 let $FZF_DEFAULT_COMMAND = 'ag -g "" --hidden --ignore .git'
 
