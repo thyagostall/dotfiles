@@ -38,7 +38,7 @@ imap jj <Esc>
 
 nmap <Leader>e :NERDTreeToggle<CR>
 nmap <Leader>j :NERDTreeFind<CR>
-nmap <Leader>t :Files<CR>
+nmap <Leader>t :GFiles<CR>
 
 nmap <Leader>[ :bp<CR>
 nmap <Leader>] :bn<CR>
