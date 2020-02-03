@@ -11,6 +11,8 @@ Plug 'preservim/nerdcommenter'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'elixir-editors/vim-elixir'
 Plug 'tpope/vim-fugitive'
+Plug 'jiangmiao/auto-pairs'
+Plug '907th/vim-auto-save'
 
 call plug#end()
 
@@ -30,6 +32,7 @@ set expandtab
 set path+=**
 set laststatus=2
 
+set list
 set listchars=eol:¬,tab:>-,trail:~,space:·
 
 let $FZF_DEFAULT_COMMAND = 'ag -g "" --hidden --ignore .git'
@@ -39,6 +42,8 @@ imap jj <Esc>
 nmap <Leader>e :NERDTreeToggle<CR>
 nmap <Leader>j :NERDTreeFind<CR>
 nmap <Leader>t :GFiles<CR>
+nmap <Leader>q :Buffers<CR>
+nmap <Leader>p :Tags<CR>
 
 nmap <Leader>[ :bp<CR>
 nmap <Leader>] :bn<CR>
