@@ -55,15 +55,3 @@ filetype plugin indent on
 
 highlight Normal ctermbg=none
 
-function ShouldIReallyExit()
-  if confirm("Really Quit?", "&Yes\n&No", 2, "Warning") == 1
-    qall
-  else
-    return 0
-  endif
-endfunction
-
-command! Quit call ShouldIReallyExit()
-
-:cnoreabb q Quit
-:cnoreabb quit Quit
